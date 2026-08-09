@@ -1,4 +1,8 @@
+ import Header from './components/Header'
+
 function App() {
-  return <h1 className="text-4xl font-bold text-blue-600 underline">teste</h1>
+  return (
+    <Header></Header>
+  ) 
 }
 export default App

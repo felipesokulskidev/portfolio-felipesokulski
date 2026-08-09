@@ -1,1 +1,4 @@
-@import "tailwindcss";
+:root { 
+  --font-serif: "Source Serif 4", serif; 
+  --font-sans: "Work Sans", sans-serif; 
+}
