@@ -1,0 +1,31 @@
+.hero {
+    padding-top: 12rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+}
+
+.hero-text{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-text-title{
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.hero-text-quote{
+    font-family: var(--font-serif);
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.hero-text-description{
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 1rem;
+}

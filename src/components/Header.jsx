@@ -16,12 +16,12 @@ function Header() {
                     <span className="nav-label">Início</span>
                 </a>
                 <a href="#" className="nav-item">
-                    <CodeXml size={18}/>
-                    <span className="nav-label">Projetos</span>
-                </a>
-                <a href="#" className="nav-item">
                     <User size={18} />
                     <span className="nav-label">Sobre</span>
+                </a>
+                <a href="#" className="nav-item">
+                    <CodeXml size={18}/>
+                    <span className="nav-label">Projetos</span>
                 </a>
                 <a href="#" className="nav-item">
                     <FileText size={18}/>
@@ -37,4 +37,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Header
