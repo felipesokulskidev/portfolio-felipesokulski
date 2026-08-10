@@ -1,4 +1,7 @@
 :root { 
   --font-serif: "Source Serif 4", serif; 
   --font-sans: "Work Sans", sans-serif; 
+  --white: #FFFFFF;
+  --black: #000000;
+  --grey: #c1c1c1;
 }
