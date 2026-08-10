@@ -11,12 +11,27 @@ function Header() {
             </div>
             
             <nav className="nav-menu">
-                <Home size={18}/>
-                <CodeXml size={18}/>
-                <User size={18} />
-                <FileText size={18}/>
-                <Mail size={18}/>
-                <Code size={18}/>
+                <a href="#" className="nav-item">
+                    <Home size={18} />
+                    <span className="nav-label">Início</span>
+                </a>
+                <a href="#" className="nav-item">
+                    <CodeXml size={18}/>
+                    <span className="nav-label">Projetos</span>
+                </a>
+                <a href="#" className="nav-item">
+                    <User size={18} />
+                    <span className="nav-label">Sobre</span>
+                </a>
+                <a href="#" className="nav-item">
+                    <FileText size={18}/>
+                    <span className="nav-label">Currículo</span>
+                </a>
+                <a href="#" className="nav-item">
+                    <Mail size={18}/>
+                    <span className="nav-label">Contato</span>
+                </a>
+                
             </nav>
         </header>
     );
