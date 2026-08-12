@@ -1,5 +1,6 @@
 .hero {
     padding-top: 8rem;
+    padding-bottom: 8rem;
     padding-left: 16rem;
     padding-right: 16rem;
 }
@@ -77,6 +78,58 @@
     border-radius: 0.5rem;
     cursor: pointer;
     font-family: var(--font-sans);
+    transition: all 200ms ease-out
+}
+
+.hero-buttons-email:focus {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px hsl(0 0% 9%);
+  }
+
+/* brilho sutil no topo (borda com gradiente) */
+.hero-buttons-email::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(to bottom, rgb(255 255 255 / 0.2), transparent);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+}
+
+/* efeito "shine" que desliza da esquerda pra direita no hover */
+.hero-buttons-email::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, rgb(255 255 255 / 0.2), transparent);
+    opacity: 0;
+    transition: opacity 500ms ease-out, clip-path 500ms ease-out;
+    clip-path: polygon(-100% 0, -100% 100%, -100% 100%, -100% 0);
+}
+
+
+.hero-buttons-email:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transform: translateY(-2px); 
+}
+
+.hero-buttons-email:hover::after {
+    opacity: 1;
+    clip-path: polygon(-100% 0, 200% 100%, 200% 100%, 200% 0);
+}
+
+
+.hero-buttons-email:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
 .hero-buttons-cv{
@@ -97,6 +150,10 @@
     font-family: var(--font-sans);
 }
 
+.hero-buttons-cv:hover{
+    background-color: rgb(237, 237, 237);
+}
+
 .hero-socials{
     padding-top: 4rem;
     display: flex;
@@ -115,4 +172,9 @@
     font-size: 1.2rem;
     border-bottom: solid 1px var(--blue);
     font-family: var(--font-sans);
+    transition: all 200ms ease-out
+}
+
+.hero-socials-badge:hover{
+    transform: translateY(-4px);
 }

@@ -1,9 +1,12 @@
 .sobre{
-    padding-top: 10rem;
+    padding-top: 8rem;
+    padding-bottom:8rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-top: solid 1px var(--grey);
+    border-bottom: solid 1px var(--grey);
 }
 
 .sobre-title{
