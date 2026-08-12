@@ -30,7 +30,7 @@ function Hero(){
                 <a href="https://github.com/felipesokulskidev/" className='hero-socials-badge'>
                 <MoveUpRight size={18}/> Github
                 </a>
-                <a href="www.linkedin.com/in/felipekrupasokulski" className='hero-socials-badge'>
+                <a href="http://linkedin.com/in/felipekrupasokulski" className='hero-socials-badge'>
                 <MoveUpRight size={18}/> LinkedIn
                 </a>
                 <a href="https://instagram.com/felipe.ksokulski/" className='hero-socials-badge'>

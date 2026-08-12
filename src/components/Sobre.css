@@ -21,7 +21,15 @@
     padding-top: 4rem;
     font-family: var(--font-sans);
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     max-width: 45rem;
     text-align: center;
+    line-height: 2.3rem;
+}
+
+.sobre-text-span{
+    background-color: rgb(64, 187, 253);
+    border-radius: 0.3rem;
+    padding: 0.2rem;
+    color: var(--black);
 }
