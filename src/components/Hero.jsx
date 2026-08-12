@@ -16,7 +16,7 @@ function Hero(){
             </div>
 
             <div className='hero-buttons'>
-                <a href="mailto:felipe.ksokulski@gmail.com" className='hero-buttons-email'>
+                <a href="mailto:felipe.ksokulski@gmail.com?subject=Contato via portfólio&body=Olá Felipe, vim através do seu portfólio!" className='hero-buttons-email'>
                     <Mail size={18} />
                     Enviar E-mail
                 </a>

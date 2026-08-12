@@ -1,0 +1,100 @@
+.contato {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.contato-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.contato-desc {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    color: var(--strong-grey);
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.contato-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contato-links a {
+    position: relative;
+    overflow: hidden; /* garante que o "shine" não vaze pra fora do border-radius */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.9rem 1.75rem;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.contato-links a:focus {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px hsl(0 0% 9%);
+}
+
+/* brilho sutil no topo */
+.contato-links a::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(to bottom, rgb(255 255 255 / 0.2), transparent);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+}
+
+/* efeito "shine" deslizando no hover */
+.contato-links a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, rgb(255 255 255 / 0.2), transparent);
+    opacity: 0;
+    transition: opacity 500ms ease-out, clip-path 500ms ease-out;
+    clip-path: polygon(-100% 0, -100% 100%, -100% 100%, -100% 0);
+}
+
+.contato-links a:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transform: translateY(-2px);
+}
+
+.contato-links a:hover::after {
+    opacity: 1;
+    clip-path: polygon(-100% 0, 200% 100%, 200% 100%, 200% 0);
+}
+
+.contato-links a:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
