@@ -1,6 +1,7 @@
  import Header from './components/Header'
  import Hero from './components/Hero'
  import Sobre from './components/Sobre'
+ import Projetos from './components/Projetos'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header></Header>
       <Hero></Hero>
       <Sobre></Sobre>
+      <Projetos></Projetos>
     </div>
       
   ) 
