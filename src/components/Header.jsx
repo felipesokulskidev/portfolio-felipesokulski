@@ -1,12 +1,13 @@
 import React from 'react';
 import { Home, CodeXml, User, FileText, Mail, Code } from 'lucide-react';
 import './Header.css'; 
+import Logo from '../assets/logo-website.png'
 
 function Header() {
     return (
         <header className="header">
             <div className="logo-container">
-                <img src="src/assets/logo-website.png" className="logo-img" alt="Logo" />
+                <img src={Logo} className="logo-img" alt="Logo" />
                 <span className="logo-text">Felipe</span>
             </div>
             
