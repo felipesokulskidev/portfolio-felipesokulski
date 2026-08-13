@@ -98,3 +98,56 @@
     transform: translateY(0);
     box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
+
+@media (max-width: 640px) {
+    .contato {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        gap: 0.8rem;
+    }
+
+    .contato-title {
+        font-size: 1.8rem;
+    }
+
+    .contato-desc {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .contato-links {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 0.4rem;
+        margin-top: 1rem;
+    }
+
+    .contato-links a {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 0.65rem 0.4rem;
+        font-size: 0.75rem;
+        gap: 0.25rem;
+        justify-content: center;
+    }
+
+    .contato-links a svg {
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .contato {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .contato-title {
+        font-size: 2.1rem;
+    }
+}

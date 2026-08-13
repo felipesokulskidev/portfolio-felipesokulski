@@ -62,3 +62,53 @@
 .nav-item:hover .nav-label {
   max-width: 100px;
 }
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .logo-img {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .logo-text {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
+
+  .nav-menu {
+    gap: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav-item {
+    gap: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    padding: 0.7rem 1rem;
+  }
+
+  .nav-menu {
+    gap: 0.6rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}

@@ -178,3 +178,73 @@
 .hero-socials-badge:hover{
     transform: translateY(-4px);
 }
+
+@media (max-width: 1024px) {
+    .hero {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .hero-text-quote {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .hero-text {
+        gap: 1.2rem;
+    }
+
+    .hero-text-badge {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-text-quote {
+        font-size: 2.2rem;
+        max-width: 100%;
+    }
+
+    .hero-text-description {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        padding-top: 2.5rem;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .hero-buttons-email,
+    .hero-buttons-cv {
+        width: 100%;
+        padding: 0.9rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .hero-socials {
+        padding-top: 2.5rem;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .hero-socials-badge {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero-text-quote {
+        font-size: 1.8rem;
+    }
+}

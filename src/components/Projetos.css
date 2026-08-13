@@ -196,3 +196,72 @@
     border-radius: 9999px;
     font-family: var(--font-sans);
 }
+
+@media (max-width: 1024px) {
+    .projetos {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .projetos-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .projetos {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .projetos-subtitle {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .projetos-card {
+        padding: 1.2rem;
+    }
+
+    .projetos-card-header {
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .projetos-card-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .projetos-card-nome {
+        font-size: 1.2rem;
+    }
+
+    .projetos-card-desc {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .projetos-card-stack {
+        margin-left: 0;
+        gap: 6px;
+    }
+
+    .tech-tag {
+        font-size: 0.85rem;
+        padding: 2px 8px;
+    }
+
+    .projetos-status {
+        position: static; 
+        align-self: flex-end;
+        margin-bottom: 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+

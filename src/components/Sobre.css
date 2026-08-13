@@ -37,9 +37,19 @@
     color: var(--black);
 }
 
-.formacao{
+/* Container que agrupa todos os blocos de formação e garante alinhamento entre eles */
+.formacao-lista {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    max-width: 40rem;
+    margin-top: 3rem;
+}
+
+.formacao{
+    display: grid;
+    grid-template-columns: 8rem 1fr;
     align-items: center;
     gap: 1.5rem;
 }
@@ -61,6 +71,7 @@
     justify-content: center;
     align-items: start;
     flex-direction: column;
+    text-align: left;
 }
 
 .formacao-title{
@@ -143,4 +154,68 @@
     border: solid 1px var(--grey);
     border-radius: 9999px;
     padding: 0.4rem 0.9rem; 
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .sobre-text {
+        padding-top: 2.5rem;
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+        max-width: 100%;
+    }
+
+    .formacao-lista {
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .formacao {
+        grid-template-columns: 4.5rem 1fr;
+        gap: 1rem;
+    }
+
+    .formacao-logo-puc {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .formacao-title {
+        margin-top: 4rem;
+    }
+
+    .formacao-faculdade {
+        font-size: 1.1rem;
+        margin-top: 0;
+    }
+
+    .formacao-local {
+        font-size: 0.9rem;
+    }
+
+    .formacao-conclusao {
+        font-size: 0.8rem;
+    }
+
+    .stack {
+        max-width: 100%;
+        margin-top: 2rem;
+        padding: 0 0.5rem;
+    }
+
+    .stack-title {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .stack {
+        max-width: 80%;
+    }
 }
