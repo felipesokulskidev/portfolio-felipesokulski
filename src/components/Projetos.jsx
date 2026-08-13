@@ -47,7 +47,7 @@ const cores = {
 
 function Projetos(){
     return(
-        <div className='projetos'>
+        <section className='projetos' id="projetos">
             <span className='projetos-title'>Projetos</span>
             <span className='projetos-subtitle'>Acompanhe alguns projetos que venho desenvolvendo no meu GitHub</span>
             
@@ -93,7 +93,7 @@ function Projetos(){
                 ))}
                 
             </div>
-        </div>
+        </section>
     )
 }
 

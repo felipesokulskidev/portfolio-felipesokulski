@@ -11,23 +11,23 @@ function Header() {
             </div>
             
             <nav className="nav-menu">
-                <a href="#" className="nav-item">
+                <a href="#inicio" className="nav-item">
                     <Home size={18} />
                     <span className="nav-label">Início</span>
                 </a>
-                <a href="#" className="nav-item">
+                <a href="#sobre" className="nav-item">
                     <User size={18} />
                     <span className="nav-label">Sobre</span>
                 </a>
-                <a href="#" className="nav-item">
+                <a href="#projetos" className="nav-item">
                     <CodeXml size={18}/>
                     <span className="nav-label">Projetos</span>
                 </a>
-                <a href="#" className="nav-item">
+                <a href="#inicio" className="nav-item">
                     <FileText size={18}/>
                     <span className="nav-label">Currículo</span>
                 </a>
-                <a href="#" className="nav-item">
+                <a href="#contato" className="nav-item">
                     <Mail size={18}/>
                     <span className="nav-label">Contato</span>
                 </a>

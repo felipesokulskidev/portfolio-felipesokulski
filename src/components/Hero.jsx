@@ -4,7 +4,7 @@ import './Hero.css';
 
 function Hero(){
     return (
-        <section className='hero'>
+        <section className='hero' id="inicio">
             <div className='hero-text'>
                 <div className='hero-text-badge'>
                     <span className='hero-text-local'> <MapPin size = {18}></MapPin> Curitiba • PR</span>

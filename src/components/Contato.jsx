@@ -2,7 +2,7 @@ import './Contato.css'
 
 function Contato(){
     return(
-        <div className='contato'>
+        <section className='contato' id="contato">
             <span className='contato-title'>Vamos conversar!</span>
             <span className='contato-desc'>Estou aberto à novas oportunidades, novos projetos e parcerias. Buscando um estágio na área da tecnologia.</span>
             <div className='contato-links'>
@@ -16,7 +16,7 @@ function Contato(){
                     GitHub
                 </a>
             </div>
-        </div>
+        </section>
     )
 }
 

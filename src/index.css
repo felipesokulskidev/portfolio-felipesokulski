@@ -7,3 +7,7 @@
   --strong-grey: #4c4c4c;
   --blue: #1cc2ff;
 }
+
+html {
+    scroll-behavior: smooth;
+}
