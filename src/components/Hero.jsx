@@ -20,7 +20,7 @@ function Hero(){
                     <Mail size={18} />
                     Enviar E-mail
                 </a>
-                <a href="public/curriculo-felipe.pdf" download className='hero-buttons-cv'>
+                <a href="/curriculo-felipe.pdf" download className='hero-buttons-cv'>
                     <ArrowDownToLine size={18} />
                     Baixar Currículo
                 </a>
