@@ -21,8 +21,54 @@ function Sobre(){
                 </div>
                 
             </div>
-            <div className='stack'>
 
+            <span className='stack-title'>Ferramentas</span>
+
+            <div className='stack'>
+                <div className='stack-pill'>
+                    <i className="devicon-git-plain colored stack-pill-icon"></i>
+                    <span>Git</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-github-original stack-pill-icon"></i>
+                    <span>GitHub</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-python-plain colored stack-pill-icon"></i>
+                    <span>Python</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-java-plain colored stack-pill-icon"></i>
+                    <span>Java</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-html5-plain colored stack-pill-icon"></i>
+                    <span>HTML</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-css3-plain colored stack-pill-icon"></i>
+                    <span>CSS</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-react-original colored stack-pill-icon"></i>
+                    <span>React</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-javascript-plain colored stack-pill-icon"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-typescript-plain colored stack-pill-icon"></i>
+                    <span>TypeScript</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-mysql-plain colored stack-pill-icon"></i>
+                    <span>MySQL</span>
+                </div>
+                <div className='stack-pill'>
+                    <i className="devicon-supabase-plain colored stack-pill-icon"></i>
+                    <span>Supabase</span>
+                </div>
             </div>
         </section>
     )

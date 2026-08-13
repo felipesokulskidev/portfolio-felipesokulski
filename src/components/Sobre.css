@@ -96,3 +96,51 @@
     font-weight: 400;
     font-size: 1rem;
 }
+
+.stack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-top: 3rem;
+    max-width: 50%;
+}
+
+.stack-pill{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--grey);
+    border-radius: 9999px;
+    background: transparent;
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.stack-pill:hover{
+    border-color: var(--foreground, #333);
+    background: rgba(0,0,0,0.02);
+}
+
+.stack-pill-icon{
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.stack-pill span{
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.stack-title{
+    margin-top: 8rem;
+    display: flex;
+    gap: 0.5rem;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 1rem;
+    border: solid 1px var(--grey);
+    border-radius: 9999px;
+    padding: 0.4rem 0.9rem; 
+}
