@@ -1,5 +1,4 @@
-import React from 'react';
-import { Home, CodeXml, User, FileText, Mail, Code } from 'lucide-react';
+import { Home, CodeXml, User, FileText, Mail} from 'lucide-react';
 import './Header.css'; 
 import Logo from '../assets/logo-website.png'
 

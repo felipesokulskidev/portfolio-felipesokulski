@@ -1,4 +1,3 @@
-import React from 'react';
 import { MapPin, Mail, ArrowDownToLine, MoveUpRight} from 'lucide-react';
 import './Hero.css';
 

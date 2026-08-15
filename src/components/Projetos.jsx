@@ -1,4 +1,4 @@
-import { Star, GitFork, SquareArrowOutUpRight, ArrowUpRight, Sparkles } from 'lucide-react';
+import { Star, SquareArrowOutUpRight } from 'lucide-react';
 import './Projetos.css'
 
 const projetos = [
