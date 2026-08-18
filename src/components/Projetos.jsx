@@ -24,14 +24,6 @@ const projetos = [
         tecnologias: ["HTML", "CSS", "JavaScript"],
         link: "https://github.com/felipesokulskidev/spotify" 
     },
-    {
-        id: 2,
-        nome: "Simulador de Molduras",
-        descricao: "Protótipo web para visualização de molduras personalizadas, permitindo enviar uma foto, escolher tamanho e moldura e visualizar o quadro pronto em tempo real, com escala proporcional real e reposicionamento da imagem. Desenvolvi o simulador completo em React, incluindo a lógica de renderização do preview, o cálculo de escala e o componente único que concentra toda a interface.",
-        tecnologias: ["React", "Vite", "Tailwind CSS", "JavaScript"],
-        link: "https://github.com/felipesokulskidev/frame-preview",
-        emDesenvolvimento: true
-    },
 ]
 
 const cores = {
