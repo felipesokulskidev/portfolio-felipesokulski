@@ -32,6 +32,20 @@ function Sobre(){
                 </div>
             </div>
 
+            <span className='formacao-title'>Experiência</span>
+            <div className="formacao-lista">
+                <div className="formacao">
+                    <div className="formacao-logo-puc">
+                        <img src={pucLogo} alt="PUCPR" />
+                    </div>
+                    <div className="formacao-texto">
+                        <span className="formacao-faculdade">Bolsista de Iniciação Científica (PIBIC)</span>
+                        <span className="formacao-local">Pontifícia Universidade Católica do Paraná — desenvolvimento de um sistema de detecção dinâmica de malware Android</span>
+                        <span className="formacao-conclusao">2026 - 2027</span>
+                    </div>
+                </div>
+            </div>
+
             <span className='stack-title'>Ferramentas</span>
 
             <div className='stack'>
